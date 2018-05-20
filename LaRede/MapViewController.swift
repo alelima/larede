@@ -20,9 +20,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         }
     }
     
-    var mapAddressCoordinate: CLLocationCoordinate2D?
-    
-    
+    var mapAddressCoordinate: CLLocationCoordinate2D?   
     
     @objc func longPress(recognizer: UIPanGestureRecognizer) {
         switch recognizer.state {
