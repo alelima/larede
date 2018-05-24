@@ -36,6 +36,10 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Autoriza o uso de sua Localização</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Autorize o uso da sua câmera</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Autorize o acesso a sua biblioteca de fotos</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

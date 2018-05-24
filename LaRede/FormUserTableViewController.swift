@@ -170,7 +170,7 @@ class FormUserTableViewController: UITableViewController, URLSessionDataDelegate
     
     @IBAction func unWindToFormUserFromMap(_ segue: UIStoryboardSegue) {
         let controller = segue.source as! MapViewController
-        print(controller.mapAddressCoordinate)    
+        print(controller.mapAddress)
     }
 
 }

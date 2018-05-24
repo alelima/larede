@@ -20,19 +20,50 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         }
     }
     
-    var mapAddressCoordinate: CLLocationCoordinate2D?   
+    var mapPlacemark: CLPlacemark?
+    var mapAddress: Address?
     
     @objc func longPress(recognizer: UIPanGestureRecognizer) {
         switch recognizer.state {
         case .changed: fallthrough
         case .ended:
             let point = recognizer.location(in: mapView)
-            mapAddressCoordinate = mapView.convert(point, toCoordinateFrom: mapView)
+            let mapAddressCoordinate = mapView.convert(point, toCoordinateFrom: mapView)
             let annotation = MKPointAnnotation()
-            annotation.coordinate = mapAddressCoordinate!
-            mapView.addAnnotation(annotation)           
+            annotation.coordinate = mapAddressCoordinate
+            mapView.addAnnotation(annotation)
+            generatePlacemark(from: mapAddressCoordinate)
         default: break
         }
+    }
+    
+    func generatePlacemark(from mapCoordinate: CLLocationCoordinate2D) {
+            let geoCoder = CLGeocoder()
+            let location = CLLocation(latitude: (mapCoordinate.latitude), longitude: mapCoordinate.longitude)
+            geoCoder.reverseGeocodeLocation(location, completionHandler: { [unowned self] (placemarks, error) in
+                if let er = error {
+                    print(er.localizedDescription)
+                    self.mapPlacemark = nil
+                } else {
+                    self.convertAdress(from: placemarks![0])
+                }
+                
+            })
+    }
+    
+    func convertAdress(from placemark: CLPlacemark) {
+        let geo = Geo()
+        geo.lat = (placemark.location?.coordinate.latitude)!
+        geo.lng = (placemark.location?.coordinate.longitude)!
+        
+        let address = Address()
+        address.city = placemark.locality
+        address.street = placemark.subLocality
+        
+        address.geo = geo
+        
+        mapAddress = address
+        
     }
     
     override func viewDidLoad() {
