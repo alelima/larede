@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7FCBBF6A3510C3EFEE7E6C50 /* Pods_LaRede.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CEB4588E0C564C9EFBF2CFD /* Pods_LaRede.framework */; };
+		D25DBD5920C849F400334F66 /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25DBD5820C849F400334F66 /* UserDetailTableViewCell.swift */; };
+		D25DBD5B20C84C7800334F66 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25DBD5A20C84C7800334F66 /* PhotoDataSource.swift */; };
+		D25DBD5D20C8ABCA00334F66 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D25DBD5C20C8ABCA00334F66 /* GoogleService-Info.plist */; };
 		D273BA2D20A35AA10045BE07 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = D273BA2C20A35AA10045BE07 /* Reachability.swift */; };
 		D273BA3120A3B8F00045BE07 /* FormUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D273BA3020A3B8F00045BE07 /* FormUserTableViewController.swift */; };
 		D273BA3520A3CCAE0045BE07 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = D273BA3220A3CCAD0045BE07 /* Address.swift */; };
@@ -16,6 +19,7 @@
 		D28A002720ACC02600733C74 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28A002620ACC02600733C74 /* ActivityIndicator.swift */; };
 		D2A07D4A209E24E600039C22 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A07D49209E24E600039C22 /* User.swift */; };
 		D2C2254A20ACF20D00623926 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C2254920ACF20D00623926 /* MapViewController.swift */; };
+		D2FA17C620C8AD6100C1C29F /* AutenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA17C520C8AD6100C1C29F /* AutenticationViewController.swift */; };
 		D2FA96D1209A811E00C14995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA96D0209A811E00C14995 /* AppDelegate.swift */; };
 		D2FA96D3209A811E00C14995 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA96D2209A811E00C14995 /* ViewController.swift */; };
 		D2FA96D6209A811E00C14995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2FA96D4209A811E00C14995 /* Main.storyboard */; };
@@ -30,6 +34,9 @@
 
 /* Begin PBXFileReference section */
 		2CEB4588E0C564C9EFBF2CFD /* Pods_LaRede.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaRede.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25DBD5820C849F400334F66 /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
+		D25DBD5A20C84C7800334F66 /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
+		D25DBD5C20C8ABCA00334F66 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D273BA2C20A35AA10045BE07 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		D273BA3020A3B8F00045BE07 /* FormUserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormUserTableViewController.swift; sourceTree = "<group>"; };
 		D273BA3220A3CCAD0045BE07 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
@@ -38,6 +45,7 @@
 		D28A002620ACC02600733C74 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		D2A07D49209E24E600039C22 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D2C2254920ACF20D00623926 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D2FA17C520C8AD6100C1C29F /* AutenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutenticationViewController.swift; sourceTree = "<group>"; };
 		D2FA96CD209A811E00C14995 /* LaRede.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaRede.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FA96D0209A811E00C14995 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2FA96D2209A811E00C14995 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +138,7 @@
 				D2FA96D2209A811E00C14995 /* ViewController.swift */,
 				D2FA96D4209A811E00C14995 /* Main.storyboard */,
 				D2FA96E9209A8EEC00C14995 /* UserTableViewCell.swift */,
+				D25DBD5820C849F400334F66 /* UserDetailTableViewCell.swift */,
 				D2FA96DA209A812100C14995 /* Assets.xcassets */,
 				D2FA96DC209A812100C14995 /* LaunchScreen.storyboard */,
 				D2FA96DF209A812100C14995 /* Info.plist */,
@@ -138,6 +147,9 @@
 				D273BA3020A3B8F00045BE07 /* FormUserTableViewController.swift */,
 				D2C2254920ACF20D00623926 /* MapViewController.swift */,
 				D2FEA4A520B646710052A0C8 /* UserDetailViewController.swift */,
+				D25DBD5A20C84C7800334F66 /* PhotoDataSource.swift */,
+				D25DBD5C20C8ABCA00334F66 /* GoogleService-Info.plist */,
+				D2FA17C520C8AD6100C1C29F /* AutenticationViewController.swift */,
 			);
 			path = LaRede;
 			sourceTree = "<group>";
@@ -163,6 +175,7 @@
 				D2FA96CA209A811E00C14995 /* Frameworks */,
 				D2FA96CB209A811E00C14995 /* Resources */,
 				CB5D1BB700E9F9529237703F /* [CP] Embed Pods Frameworks */,
+				00762E93CD1E3037B3541BB6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2FA96DE209A812100C14995 /* LaunchScreen.storyboard in Resources */,
+				D25DBD5D20C8ABCA00334F66 /* GoogleService-Info.plist in Resources */,
 				D2FA96DB209A812100C14995 /* Assets.xcassets in Resources */,
 				D2FA96D6209A811E00C14995 /* Main.storyboard in Resources */,
 			);
@@ -220,6 +234,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		00762E93CD1E3037B3541BB6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LaRede/Pods-LaRede-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaRede/Pods-LaRede-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		98EE96B2966067807E36C9CE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -247,11 +281,27 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-LaRede/Pods-LaRede-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -268,6 +318,7 @@
 				D2FA96EA209A8EEC00C14995 /* UserTableViewCell.swift in Sources */,
 				D2FA96D3209A811E00C14995 /* ViewController.swift in Sources */,
 				D2FA96E6209A820800C14995 /* UserTableViewController.swift in Sources */,
+				D2FA17C620C8AD6100C1C29F /* AutenticationViewController.swift in Sources */,
 				D2FA96D9209A811E00C14995 /* LaRede.xcdatamodeld in Sources */,
 				D28A002720ACC02600733C74 /* ActivityIndicator.swift in Sources */,
 				D273BA3520A3CCAE0045BE07 /* Address.swift in Sources */,
@@ -277,7 +328,9 @@
 				D273BA2D20A35AA10045BE07 /* Reachability.swift in Sources */,
 				D273BA3120A3B8F00045BE07 /* FormUserTableViewController.swift in Sources */,
 				D2FEA4A620B646710052A0C8 /* UserDetailViewController.swift in Sources */,
+				D25DBD5B20C84C7800334F66 /* PhotoDataSource.swift in Sources */,
 				D2A07D4A209E24E600039C22 /* User.swift in Sources */,
+				D25DBD5920C849F400334F66 /* UserDetailTableViewCell.swift in Sources */,
 				D273BA3720A3CCAE0045BE07 /* Geo.swift in Sources */,
 				D2C2254A20ACF20D00623926 /* MapViewController.swift in Sources */,
 			);
