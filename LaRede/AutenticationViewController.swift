@@ -23,9 +23,19 @@ class AutenticationViewController: UIViewController, FBSDKLoginButtonDelegate {
         }
     }
     
-
     override func viewDidLoad() {
-        let logInTWTButton = TWTRLogInButton(logInCompletion: { [unowned self] session, error in
+        let logInTWTButton = createTwitterButton()
+        logInTWTButton.center = self.view.center
+        self.view.addSubview(logInTWTButton)
+        
+        let logInFBKBUtton = FBSDKLoginButton()
+        logInFBKBUtton.delegate = self
+        logInFBKBUtton.center = CGPoint(x:self.view.center.x, y:self.view.center.y + 20)
+        self.view.addSubview(logInFBKBUtton)
+    }
+    
+    fileprivate func createTwitterButton() -> TWTRLogInButton{
+        return TWTRLogInButton(logInCompletion: { [unowned self] session, error in
             if (session != nil) {
                 let authToken = session?.authToken
                 let authTokenSecret = session?.authTokenSecret
@@ -57,13 +67,6 @@ class AutenticationViewController: UIViewController, FBSDKLoginButtonDelegate {
                 print("error: \(error?.localizedDescription)");
             }
         })
-        logInTWTButton.center = self.view.center
-        self.view.addSubview(logInTWTButton)
-        
-        let logInFBKBUtton = FBSDKLoginButton()
-        logInFBKBUtton.delegate = self
-        logInFBKBUtton.center = CGPoint(x:self.view.center.x, y:self.view.center.y + 20)
-        self.view.addSubview(logInFBKBUtton)
     }
     
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error?) {

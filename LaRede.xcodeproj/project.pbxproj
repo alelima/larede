@@ -18,7 +18,10 @@
 		D273BA3720A3CCAE0045BE07 /* Geo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D273BA3420A3CCAE0045BE07 /* Geo.swift */; };
 		D28A002720ACC02600733C74 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28A002620ACC02600733C74 /* ActivityIndicator.swift */; };
 		D2A07D4A209E24E600039C22 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A07D49209E24E600039C22 /* User.swift */; };
+		D2B6E1AB20D1EE040084D6FB /* LaRedeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B6E1AA20D1EE040084D6FB /* LaRedeTests.swift */; };
 		D2C2254A20ACF20D00623926 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C2254920ACF20D00623926 /* MapViewController.swift */; };
+		D2F0243120D1EE7100396209 /* AutenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0243020D1EE7100396209 /* AutenticationTests.swift */; };
+		D2F0243320D1F35900396209 /* ListUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F0243220D1F35900396209 /* ListUserTests.swift */; };
 		D2FA17C620C8AD6100C1C29F /* AutenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA17C520C8AD6100C1C29F /* AutenticationViewController.swift */; };
 		D2FA96D1209A811E00C14995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA96D0209A811E00C14995 /* AppDelegate.swift */; };
 		D2FA96D3209A811E00C14995 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA96D2209A811E00C14995 /* ViewController.swift */; };
@@ -30,10 +33,24 @@
 		D2FA96E8209A825100C14995 /* UserCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA96E7209A825100C14995 /* UserCodable.swift */; };
 		D2FA96EA209A8EEC00C14995 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FA96E9209A8EEC00C14995 /* UserTableViewCell.swift */; };
 		D2FEA4A620B646710052A0C8 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEA4A520B646710052A0C8 /* UserDetailViewController.swift */; };
+		E30F275A308AEAD457BFD67C /* Pods_LaRedeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D019A8B267F3903C6070F24 /* Pods_LaRedeTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D2B6E1AD20D1EE040084D6FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2FA96C5209A811E00C14995 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2FA96CC209A811E00C14995;
+			remoteInfo = LaRede;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		1BDC11A05793E1E9DBB34871 /* Pods-LaRedeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaRedeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaRedeTests/Pods-LaRedeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2CEB4588E0C564C9EFBF2CFD /* Pods_LaRede.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaRede.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D019A8B267F3903C6070F24 /* Pods_LaRedeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaRedeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86A206CBBE518BE439FE96DF /* Pods-LaRedeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaRedeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaRedeTests/Pods-LaRedeTests.release.xcconfig"; sourceTree = "<group>"; };
 		D25DBD5820C849F400334F66 /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
 		D25DBD5A20C84C7800334F66 /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
 		D25DBD5C20C8ABCA00334F66 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -44,7 +61,12 @@
 		D273BA3420A3CCAE0045BE07 /* Geo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geo.swift; sourceTree = "<group>"; };
 		D28A002620ACC02600733C74 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		D2A07D49209E24E600039C22 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D2B6E1A820D1EE040084D6FB /* LaRedeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaRedeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2B6E1AA20D1EE040084D6FB /* LaRedeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaRedeTests.swift; sourceTree = "<group>"; };
+		D2B6E1AC20D1EE040084D6FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2C2254920ACF20D00623926 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D2F0243020D1EE7100396209 /* AutenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutenticationTests.swift; sourceTree = "<group>"; };
+		D2F0243220D1F35900396209 /* ListUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserTests.swift; sourceTree = "<group>"; };
 		D2FA17C520C8AD6100C1C29F /* AutenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutenticationViewController.swift; sourceTree = "<group>"; };
 		D2FA96CD209A811E00C14995 /* LaRede.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaRede.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FA96D0209A811E00C14995 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +85,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D2B6E1A520D1EE040084D6FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E30F275A308AEAD457BFD67C /* Pods_LaRedeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2FA96CA209A811E00C14995 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -78,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				2CEB4588E0C564C9EFBF2CFD /* Pods_LaRede.framework */,
+				3D019A8B267F3903C6070F24 /* Pods_LaRedeTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,10 +141,22 @@
 			path = ModelData;
 			sourceTree = "<group>";
 		};
+		D2B6E1A920D1EE040084D6FB /* LaRedeTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2B6E1AA20D1EE040084D6FB /* LaRedeTests.swift */,
+				D2B6E1AC20D1EE040084D6FB /* Info.plist */,
+				D2F0243020D1EE7100396209 /* AutenticationTests.swift */,
+				D2F0243220D1F35900396209 /* ListUserTests.swift */,
+			);
+			path = LaRedeTests;
+			sourceTree = "<group>";
+		};
 		D2FA96C4209A811E00C14995 = {
 			isa = PBXGroup;
 			children = (
 				D2FA96CF209A811E00C14995 /* LaRede */,
+				D2B6E1A920D1EE040084D6FB /* LaRedeTests */,
 				D2FA96CE209A811E00C14995 /* Products */,
 				F876F5AEA63A50F612DC13C0 /* Pods */,
 				418DE4A5A7EC1839B0BAA8E0 /* Frameworks */,
@@ -124,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				D2FA96CD209A811E00C14995 /* LaRede.app */,
+				D2B6E1A820D1EE040084D6FB /* LaRedeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +203,8 @@
 			children = (
 				FD6A72C7A8498BCF159532FE /* Pods-LaRede.debug.xcconfig */,
 				EEE7BE7A057EBB6972589EAD /* Pods-LaRede.release.xcconfig */,
+				1BDC11A05793E1E9DBB34871 /* Pods-LaRedeTests.debug.xcconfig */,
+				86A206CBBE518BE439FE96DF /* Pods-LaRedeTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -166,6 +212,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D2B6E1A720D1EE040084D6FB /* LaRedeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2B6E1AF20D1EE040084D6FB /* Build configuration list for PBXNativeTarget "LaRedeTests" */;
+			buildPhases = (
+				2EE3FCF38E554AEDA87F5860 /* [CP] Check Pods Manifest.lock */,
+				D2B6E1A420D1EE040084D6FB /* Sources */,
+				D2B6E1A520D1EE040084D6FB /* Frameworks */,
+				D2B6E1A620D1EE040084D6FB /* Resources */,
+				731F6EBA18B89602C3E676E7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2B6E1AE20D1EE040084D6FB /* PBXTargetDependency */,
+			);
+			name = LaRedeTests;
+			productName = LaRedeTests;
+			productReference = D2B6E1A820D1EE040084D6FB /* LaRedeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D2FA96CC209A811E00C14995 /* LaRede */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2FA96E2209A812100C14995 /* Build configuration list for PBXNativeTarget "LaRede" */;
@@ -196,6 +262,10 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = nitrox;
 				TargetAttributes = {
+					D2B6E1A720D1EE040084D6FB = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = D2FA96CC209A811E00C14995;
+					};
 					D2FA96CC209A811E00C14995 = {
 						CreatedOnToolsVersion = 9.3;
 					};
@@ -215,11 +285,19 @@
 			projectRoot = "";
 			targets = (
 				D2FA96CC209A811E00C14995 /* LaRede */,
+				D2B6E1A720D1EE040084D6FB /* LaRedeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D2B6E1A620D1EE040084D6FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2FA96CB209A811E00C14995 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,6 +330,44 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaRede/Pods-LaRede-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EE3FCF38E554AEDA87F5860 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LaRedeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		731F6EBA18B89602C3E676E7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LaRedeTests/Pods-LaRedeTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaRedeTests/Pods-LaRedeTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		98EE96B2966067807E36C9CE /* [CP] Check Pods Manifest.lock */ = {
@@ -311,6 +427,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D2B6E1A420D1EE040084D6FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F0243120D1EE7100396209 /* AutenticationTests.swift in Sources */,
+				D2F0243320D1F35900396209 /* ListUserTests.swift in Sources */,
+				D2B6E1AB20D1EE040084D6FB /* LaRedeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2FA96C9209A811E00C14995 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,6 +464,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		D2B6E1AE20D1EE040084D6FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2FA96CC209A811E00C14995 /* LaRede */;
+			targetProxy = D2B6E1AD20D1EE040084D6FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		D2FA96D4209A811E00C14995 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -358,6 +492,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D2B6E1B020D1EE040084D6FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BDC11A05793E1E9DBB34871 /* Pods-LaRedeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LaRedeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.nitrox.LaRedeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaRede.app/LaRede";
+			};
+			name = Debug;
+		};
+		D2B6E1B120D1EE040084D6FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86A206CBBE518BE439FE96DF /* Pods-LaRedeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LaRedeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.nitrox.LaRedeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LaRede.app/LaRede";
+			};
+			name = Release;
+		};
 		D2FA96E0209A812100C14995 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -511,6 +685,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D2B6E1AF20D1EE040084D6FB /* Build configuration list for PBXNativeTarget "LaRedeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2B6E1B020D1EE040084D6FB /* Debug */,
+				D2B6E1B120D1EE040084D6FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D2FA96C8209A811E00C14995 /* Build configuration list for PBXProject "LaRede" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

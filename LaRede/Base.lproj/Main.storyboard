@@ -14,7 +14,7 @@
         <!--Autentication View Controller-->
         <scene sceneID="4Hy-hV-fnK">
             <objects>
-                <viewController id="NKd-3R-fqf" customClass="AutenticationViewController" customModule="LaRede" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Autentication" id="NKd-3R-fqf" customClass="AutenticationViewController" customModule="LaRede" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wNv-MA-IHM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,7 +50,7 @@
         <!--Usuarios-->
         <scene sceneID="Ore-NP-HzU">
             <objects>
-                <tableViewController id="36x-sl-StO" customClass="UserTableViewController" customModule="LaRede" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ListUser" id="36x-sl-StO" customClass="UserTableViewController" customModule="LaRede" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qU0-QX-kOp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -13,5 +13,14 @@ target 'LaRede' do
   pod 'Firebase/Auth'
   pod 'TwitterKit'
   pod 'FBSDKLoginKit'
+  
+  target 'LaRedeTests' do
+      inherit! :search_paths
+      # Pods for testing
+      
+      pod 'Quick'
+      pod 'Nimble'
+      
+  end
 
 end
