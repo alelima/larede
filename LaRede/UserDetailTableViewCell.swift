@@ -11,20 +11,20 @@ import Alamofire
 import AlamofireImage
 
 class UserDetailTableViewCell: UITableViewCell {
- 
-    @IBOutlet weak var collectionView: UICollectionView!
-    
-    @IBOutlet weak var descricaoLabel: UILabel!
-    @IBOutlet weak var tituloLabel: UILabel!
+     
+    @IBOutlet weak var collectionVIew: UICollectionView!
     
     var photoDataSource: Album?
     let urlRequest = URLRequest(url: URL(string: "https://picsum.photos/100/?random")!)
     
     func show(with album: Album) {
-        self.photoDataSource = album
-        self.descricaoLabel.text = album.albumDescription
-        self.tituloLabel.text = album.name        
-        collectionView.dataSource = photoDataSource
+        self.photoDataSource = album       
+        collectionVIew.dataSource = photoDataSource
+        collectionVIew.delegate = photoDataSource
+        
+        print(collectionVIew.frame)
+        print(collectionVIew.sizeToFit())
+        
         if photoDataSource?.photos.count == 0 {
             fillDataSource(numberOfPhotos: 5)
         }
@@ -38,7 +38,7 @@ class UserDetailTableViewCell: UITableViewCell {
                     if let album = self.photoDataSource {
                         album.photos.append(image)
                         DispatchQueue.main.async {
-                            self.collectionView?.reloadData()
+                            self.collectionVIew?.reloadData()
                         }
                     }
                     
