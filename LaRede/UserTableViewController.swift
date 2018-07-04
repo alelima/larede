@@ -140,9 +140,15 @@ class UserTableViewController: UITableViewController, URLSessionDataDelegate {
         if segue.identifier == "userDetail" {
             if let destination = segue.destination as? UserDetailViewController {
                 let user = users![self.tableView.indexPathForSelectedRow!.row]
-                destination.email = user.email
+                if let email = user.email {
+                    destination.email =  email
+                }
                 if let company = user.company?.name {
                     destination.company = company
+                }
+                if let name = user.name {
+                    destination.navigationItem.title = name
+                    destination.navigationItem.largeTitleDisplayMode = .always
                 }
             }
         }

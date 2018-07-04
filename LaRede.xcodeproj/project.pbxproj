@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		7FCBBF6A3510C3EFEE7E6C50 /* Pods_LaRede.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CEB4588E0C564C9EFBF2CFD /* Pods_LaRede.framework */; };
 		D25B5BC120E44FCD00E5ACC7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B5BC020E44FCD00E5ACC7 /* Extensions.swift */; };
+		D25B5BE320ED61B100E5ACC7 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B5BE220ED61B100E5ACC7 /* Album.swift */; };
 		D25DBD5920C849F400334F66 /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25DBD5820C849F400334F66 /* UserDetailTableViewCell.swift */; };
-		D25DBD5B20C84C7800334F66 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25DBD5A20C84C7800334F66 /* PhotoDataSource.swift */; };
 		D25DBD5D20C8ABCA00334F66 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D25DBD5C20C8ABCA00334F66 /* GoogleService-Info.plist */; };
 		D273BA2D20A35AA10045BE07 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = D273BA2C20A35AA10045BE07 /* Reachability.swift */; };
 		D273BA3120A3B8F00045BE07 /* FormUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D273BA3020A3B8F00045BE07 /* FormUserTableViewController.swift */; };
@@ -53,8 +53,8 @@
 		3D019A8B267F3903C6070F24 /* Pods_LaRedeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaRedeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A206CBBE518BE439FE96DF /* Pods-LaRedeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaRedeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaRedeTests/Pods-LaRedeTests.release.xcconfig"; sourceTree = "<group>"; };
 		D25B5BC020E44FCD00E5ACC7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D25B5BE220ED61B100E5ACC7 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		D25DBD5820C849F400334F66 /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
-		D25DBD5A20C84C7800334F66 /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
 		D25DBD5C20C8ABCA00334F66 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D273BA2C20A35AA10045BE07 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		D273BA3020A3B8F00045BE07 /* FormUserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormUserTableViewController.swift; sourceTree = "<group>"; };
@@ -184,7 +184,6 @@
 				D2FA96D2209A811E00C14995 /* ViewController.swift */,
 				D2FA96D4209A811E00C14995 /* Main.storyboard */,
 				D2FA96E9209A8EEC00C14995 /* UserTableViewCell.swift */,
-				D25DBD5820C849F400334F66 /* UserDetailTableViewCell.swift */,
 				D2FA96DA209A812100C14995 /* Assets.xcassets */,
 				D2FA96DC209A812100C14995 /* LaunchScreen.storyboard */,
 				D2FA96DF209A812100C14995 /* Info.plist */,
@@ -192,8 +191,9 @@
 				D2FA96E5209A820800C14995 /* UserTableViewController.swift */,
 				D273BA3020A3B8F00045BE07 /* FormUserTableViewController.swift */,
 				D2C2254920ACF20D00623926 /* MapViewController.swift */,
+				D25B5BE220ED61B100E5ACC7 /* Album.swift */,
+				D25DBD5820C849F400334F66 /* UserDetailTableViewCell.swift */,
 				D2FEA4A520B646710052A0C8 /* UserDetailViewController.swift */,
-				D25DBD5A20C84C7800334F66 /* PhotoDataSource.swift */,
 				D25DBD5C20C8ABCA00334F66 /* GoogleService-Info.plist */,
 				D2FA17C520C8AD6100C1C29F /* AutenticationViewController.swift */,
 				D25B5BC020E44FCD00E5ACC7 /* Extensions.swift */,
@@ -458,11 +458,11 @@
 				D273BA2D20A35AA10045BE07 /* Reachability.swift in Sources */,
 				D273BA3120A3B8F00045BE07 /* FormUserTableViewController.swift in Sources */,
 				D2FEA4A620B646710052A0C8 /* UserDetailViewController.swift in Sources */,
-				D25DBD5B20C84C7800334F66 /* PhotoDataSource.swift in Sources */,
 				D2A07D4A209E24E600039C22 /* User.swift in Sources */,
 				D25DBD5920C849F400334F66 /* UserDetailTableViewCell.swift in Sources */,
 				D273BA3720A3CCAE0045BE07 /* Geo.swift in Sources */,
 				D2C2254A20ACF20D00623926 /* MapViewController.swift in Sources */,
+				D25B5BE320ED61B100E5ACC7 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

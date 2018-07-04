@@ -1,15 +1,22 @@
 //
-//  PhotoDataSource.swift
+//  Album.swift
 //  LaRede
 //
-//  Created by Alessandro on 06/06/18.
+//  Created by Alessandro on 04/07/18.
 //  Copyright © 2018 nitrox. All rights reserved.
 //
 
 import UIKit
 
-class PhotoDataSource: NSObject, UICollectionViewDataSource {
+class Album: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     var photos = [UIImage]()
+    var name: String?
+    var albumDescription: String?
+    
+    init(name: String, albumDescription: String) {
+        self.name = name
+        self.albumDescription = albumDescription        
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return photos.count
@@ -21,5 +28,9 @@ class PhotoDataSource: NSObject, UICollectionViewDataSource {
             collectionView.dequeueReusableCell(withReuseIdentifier: identifier,
                                                for: indexPath)
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 100, height: 100)
     }
 }

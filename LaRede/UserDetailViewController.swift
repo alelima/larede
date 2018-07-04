@@ -8,27 +8,40 @@
 
 import UIKit
 import Photos
+import Alamofire
+import AlamofireImage
 
-class UserDetailViewController: UIViewController {
+class UserDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var name: String?
     
     var email: String?
     
     var company: String?
+    
+    var albums = [Album]()
 
     @IBOutlet weak var userImageView: UIImageView!
     
     @IBOutlet weak var emailLabel: UILabel!
     
-    @IBOutlet weak var empresaLabel: UILabel!
+    @IBOutlet weak var empresaLabel: UILabel!       
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
         if let email = email {
             emailLabel.text = email
         }
         if let company = company {
             empresaLabel.text = company
         }
+        albums = createAlbums()
     }
     
     private func requestAuthorization() {
@@ -57,6 +70,28 @@ class UserDetailViewController: UIViewController {
             self.present(picker, animated: true, completion: nil)
         }
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return albums.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "userDetailCell", for: indexPath) as! UserDetailTableViewCell        
+        cell.show(with: albums[indexPath.row])
+        return cell
+    }
+    
+    private func createAlbums() -> [Album]{
+        var albums = [Album]()
+        for i in 0..<4 {
+            let album = Album(name:"Férias \(i)", albumDescription: "Minhas férias viajando \(i)")
+            album.photos.append(#imageLiteral(resourceName: "placeholder"))
+            albums.append(album)
+        }
+        return albums
+    }   
+    
 }
 
 extension UserDetailViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -67,3 +102,4 @@ extension UserDetailViewController: UIImagePickerControllerDelegate, UINavigatio
         picker.dismiss(animated: true, completion: nil)
     }
 }
+
