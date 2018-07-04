@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7FCBBF6A3510C3EFEE7E6C50 /* Pods_LaRede.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CEB4588E0C564C9EFBF2CFD /* Pods_LaRede.framework */; };
+		D25B5BC120E44FCD00E5ACC7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B5BC020E44FCD00E5ACC7 /* Extensions.swift */; };
 		D25DBD5920C849F400334F66 /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25DBD5820C849F400334F66 /* UserDetailTableViewCell.swift */; };
 		D25DBD5B20C84C7800334F66 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25DBD5A20C84C7800334F66 /* PhotoDataSource.swift */; };
 		D25DBD5D20C8ABCA00334F66 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D25DBD5C20C8ABCA00334F66 /* GoogleService-Info.plist */; };
@@ -51,6 +52,7 @@
 		2CEB4588E0C564C9EFBF2CFD /* Pods_LaRede.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaRede.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D019A8B267F3903C6070F24 /* Pods_LaRedeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaRedeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A206CBBE518BE439FE96DF /* Pods-LaRedeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaRedeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaRedeTests/Pods-LaRedeTests.release.xcconfig"; sourceTree = "<group>"; };
+		D25B5BC020E44FCD00E5ACC7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D25DBD5820C849F400334F66 /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
 		D25DBD5A20C84C7800334F66 /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
 		D25DBD5C20C8ABCA00334F66 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				D25DBD5A20C84C7800334F66 /* PhotoDataSource.swift */,
 				D25DBD5C20C8ABCA00334F66 /* GoogleService-Info.plist */,
 				D2FA17C520C8AD6100C1C29F /* AutenticationViewController.swift */,
+				D25B5BC020E44FCD00E5ACC7 /* Extensions.swift */,
 			);
 			path = LaRede;
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				D2FA96D9209A811E00C14995 /* LaRede.xcdatamodeld in Sources */,
 				D28A002720ACC02600733C74 /* ActivityIndicator.swift in Sources */,
 				D273BA3520A3CCAE0045BE07 /* Address.swift in Sources */,
+				D25B5BC120E44FCD00E5ACC7 /* Extensions.swift in Sources */,
 				D2FA96E8209A825100C14995 /* UserCodable.swift in Sources */,
 				D2FA96D1209A811E00C14995 /* AppDelegate.swift in Sources */,
 				D273BA3620A3CCAE0045BE07 /* Company.swift in Sources */,

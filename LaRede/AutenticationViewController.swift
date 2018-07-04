@@ -30,8 +30,14 @@ class AutenticationViewController: UIViewController, FBSDKLoginButtonDelegate {
         
         let logInFBKBUtton = FBSDKLoginButton()
         logInFBKBUtton.delegate = self
-        logInFBKBUtton.center = CGPoint(x:self.view.center.x, y:self.view.center.y + 20)
+        logInFBKBUtton.center = CGPoint(x:self.view.center.x, y:self.view.center.y + 40)
         self.view.addSubview(logInFBKBUtton)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if (FBSDKAccessToken.current() != nil) {
+            self.performSegue(withIdentifier: "autenticated", sender: nil)
+        }
     }
     
     fileprivate func createTwitterButton() -> TWTRLogInButton{
@@ -85,4 +91,5 @@ class AutenticationViewController: UIViewController, FBSDKLoginButtonDelegate {
             self.performSegue(withIdentifier: "autenticated", sender: nil)
         }
     }
+    
 }

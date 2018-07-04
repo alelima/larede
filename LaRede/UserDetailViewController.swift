@@ -10,6 +10,10 @@ import UIKit
 import Photos
 
 class UserDetailViewController: UIViewController {
+    
+    var email: String?
+    
+    var company: String?
 
     @IBOutlet weak var userImageView: UIImageView!
     
@@ -19,6 +23,12 @@ class UserDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let email = email {
+            emailLabel.text = email
+        }
+        if let company = company {
+            empresaLabel.text = company
+        }
     }
     
     private func requestAuthorization() {

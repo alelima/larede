@@ -136,4 +136,16 @@ class UserTableViewController: UITableViewController, URLSessionDataDelegate {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "userDetail" {
+            if let destination = segue.destination as? UserDetailViewController {
+                let user = users![self.tableView.indexPathForSelectedRow!.row]
+                destination.email = user.email
+                if let company = user.company?.name {
+                    destination.company = company
+                }
+            }
+        }
+    }
+    
 }
