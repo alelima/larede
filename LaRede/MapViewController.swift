@@ -53,12 +53,14 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     
     func convertAdress(from placemark: CLPlacemark) {
         let geo = Geo()
-        geo.lat = (placemark.location?.coordinate.latitude)!
-        geo.lng = (placemark.location?.coordinate.longitude)!
+        geo.lat = Double((placemark.location?.coordinate.latitude)!)
+        geo.lng = Double((placemark.location?.coordinate.longitude)!)
         
         let address = Address()
-        address.city = placemark.locality
-        address.street = placemark.subLocality
+        address.suite = placemark.locality
+        address.street = placemark.thoroughfare
+        address.city = placemark.subAdministrativeArea
+        address.zipcode = placemark.isoCountryCode
         
         address.geo = geo
         

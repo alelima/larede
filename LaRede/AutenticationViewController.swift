@@ -22,7 +22,9 @@ class AutenticationViewController: UIViewController, FBSDKLoginButtonDelegate {
         do {
             try firebaseAuth.signOut()
         } catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
+            let alert = UIAlertController(title: "Erro?", message: "Não foi possível fazer o logout.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true)
         }
     }
     
@@ -53,7 +55,9 @@ class AutenticationViewController: UIViewController, FBSDKLoginButtonDelegate {
 
         Auth.auth().signIn(with: credential) {[unowned self] (user, error) in
             if let error = error {
-                // ...
+                let alert = UIAlertController(title: "Erro?", message: "Não foi possível fazer sua autenticação.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true)
                 return
             }
             print("AUTENTICADO")
@@ -72,7 +76,9 @@ class AutenticationViewController: UIViewController, FBSDKLoginButtonDelegate {
         
         Auth.auth().createUser(withEmail: email, password: password, completion: { [unowned self] (user, error) in
             if let error = error {
-                // ...
+                let alert = UIAlertController(title: "Erro?", message: "Não foi possível criar seu usuário.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true)
                 return
             }
             print("AUTENTICADO")

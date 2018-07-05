@@ -72,7 +72,9 @@ class UserTableViewController: UITableViewController, URLSessionDataDelegate {
         do {
             try AppDelegate.viewContext.save()
         } catch {
-            debugPrint("Error in save Category")
+            let alert = UIAlertController(title: "Erro", message: "Não foi possível persistir o dado.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true)
         }
     }
     
@@ -98,7 +100,7 @@ class UserTableViewController: UITableViewController, URLSessionDataDelegate {
             return
         }        
         
-//        if r.isReachable  {
+       // if r.isReachable  {
             let urlString = "https://jsonplaceholder.typicode.com/users"
             if let url = URL(string: urlString) {
                 var request = URLRequest(url: url)
@@ -112,7 +114,9 @@ class UserTableViewController: UITableViewController, URLSessionDataDelegate {
 //            do {
 //                self.users = try AppDelegate.viewContext.fetch(request)
 //            } catch {
-//                debugPrint("Error in load Users")
+//                let alert = UIAlertController(title: "Erro?", message: "Erro ao carregar os dados.", preferredStyle: .alert)
+//                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//                    self.present(alert, animated: true)
 //            }
 //        }
     }
