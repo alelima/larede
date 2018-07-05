@@ -20,14 +20,11 @@ class UserDetailTableViewCell: UITableViewCell {
     func show(with album: Album) {
         self.photoDataSource = album       
         collectionVIew.dataSource = photoDataSource
-        collectionVIew.delegate = photoDataSource
-        
-        print(collectionVIew.frame)
-        print(collectionVIew.sizeToFit())
         
         if photoDataSource?.photos.count == 0 {
             fillDataSource(numberOfPhotos: 5)
         }
+        collectionVIew.reloadData()
     }
     
     func fillDataSource(numberOfPhotos: Int) {

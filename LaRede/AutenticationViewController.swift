@@ -14,6 +14,9 @@ import FBSDKLoginKit
 
 class AutenticationViewController: UIViewController, FBSDKLoginButtonDelegate {
     
+    @IBOutlet weak var loginTextFiedl: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         let firebaseAuth = Auth.auth()
         do {
@@ -24,56 +27,22 @@ class AutenticationViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     override func viewDidLoad() {
-        let logInTWTButton = createTwitterButton()
-        logInTWTButton.center = self.view.center
-        self.view.addSubview(logInTWTButton)
-        
         let logInFBKBUtton = FBSDKLoginButton()
         logInFBKBUtton.delegate = self
-        logInFBKBUtton.center = CGPoint(x:self.view.center.x, y:self.view.center.y + 40)
+        logInFBKBUtton.center = CGPoint(x:self.view.center.x, y:self.view.center.y + 100)
         self.view.addSubview(logInFBKBUtton)
+        loginTextFiedl.returnKeyType = .next
+        passwordTextField.returnKeyType = .done
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        if Auth.auth().currentUser != nil {
+            self.performSegue(withIdentifier: "autenticated", sender: nil)
+        }
         if (FBSDKAccessToken.current() != nil) {
             self.performSegue(withIdentifier: "autenticated", sender: nil)
         }
-    }
-    
-    fileprivate func createTwitterButton() -> TWTRLogInButton{
-        return TWTRLogInButton(logInCompletion: { [unowned self] session, error in
-            if (session != nil) {
-                let authToken = session?.authToken
-                let authTokenSecret = session?.authTokenSecret
-                let credential = TwitterAuthProvider.credential(withToken: authToken!, secret: authTokenSecret!)
-                var email : String?
-                Auth.auth().signIn(with: credential) { [unowned self] (user, error) in
-                    if let error = error {
-                        // ...
-                        print("ERRO")
-                        return
-                    }
-                    // User is signed in
-                    // ...
-                    email = user?.email
-                    print("AUTENTICADO")
-                    self.performSegue(withIdentifier: "autenticated", sender: nil)
-                }
-                if let email = email {
-                    Auth.auth().currentUser?.updateEmail(to: email) { (error) in
-                        if let error = error {
-                            // ...
-                            print("ERRO NO EMAIL")
-                            return
-                        }
-                    }
-                }
-                
-            } else {
-                print("error: \(error?.localizedDescription)");
-            }
-        })
-    }
+    }   
     
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error?) {
         if let error = error {
@@ -82,7 +51,7 @@ class AutenticationViewController: UIViewController, FBSDKLoginButtonDelegate {
         }
         let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
 
-        Auth.auth().signIn(with: credential) { (user, error) in
+        Auth.auth().signIn(with: credential) {[unowned self] (user, error) in
             if let error = error {
                 // ...
                 return
@@ -92,4 +61,36 @@ class AutenticationViewController: UIViewController, FBSDKLoginButtonDelegate {
         }
     }
     
+    @IBAction func autenticateByEmail(_ sender: Any) {
+        guard let email = loginTextFiedl.text else {
+            //alert
+            return
+        }
+        guard let password = passwordTextField.text else {
+            return
+        }
+        
+        Auth.auth().createUser(withEmail: email, password: password, completion: { [unowned self] (user, error) in
+            if let error = error {
+                // ...
+                return
+            }
+            print("AUTENTICADO")
+            self.performSegue(withIdentifier: "autenticated", sender: nil)
+            })
+        
+    }
+}
+
+extension AutenticationViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        switch textField {
+            case loginTextFiedl: passwordTextField.becomeFirstResponder()
+            case passwordTextField: autenticateByEmail(passwordTextField)
+            default: break
+        }
+    return true
+    }
 }

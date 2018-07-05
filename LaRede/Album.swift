@@ -27,7 +27,7 @@ class Album: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UIC
         let cell =
             collectionView.dequeueReusableCell(withReuseIdentifier: identifier,
                                                for: indexPath)
-        cell.backgroundView?.backgroundColor = UIColor.blue
+        cell.backgroundColor = UIColor.blue
         return cell
     }
     
