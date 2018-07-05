@@ -188,7 +188,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Pf-z3-wzo">
                                 <rect key="frame" x="0.0" y="88" width="375" height="120"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CKg-wX-ZgO">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="CKg-wX-ZgO">
                                         <rect key="frame" x="12" y="16" width="90" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="90" id="yoh-VU-0jU"/>
@@ -930,4 +930,7 @@
             <point key="canvasLocation" x="4348" y="-161.08374384236453"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="placeholder" width="194" height="188"/>
+    </resources>
 </document>
