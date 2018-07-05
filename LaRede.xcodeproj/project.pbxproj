@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7FCBBF6A3510C3EFEE7E6C50 /* Pods_LaRede.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CEB4588E0C564C9EFBF2CFD /* Pods_LaRede.framework */; };
+		D251EF7820EE36CC00544804 /* UserAlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D251EF7720EE36CC00544804 /* UserAlbumCollectionViewCell.swift */; };
 		D25B5BC120E44FCD00E5ACC7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B5BC020E44FCD00E5ACC7 /* Extensions.swift */; };
 		D25B5BE320ED61B100E5ACC7 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25B5BE220ED61B100E5ACC7 /* Album.swift */; };
 		D25DBD5920C849F400334F66 /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25DBD5820C849F400334F66 /* UserDetailTableViewCell.swift */; };
@@ -52,6 +53,7 @@
 		2CEB4588E0C564C9EFBF2CFD /* Pods_LaRede.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaRede.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D019A8B267F3903C6070F24 /* Pods_LaRedeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaRedeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86A206CBBE518BE439FE96DF /* Pods-LaRedeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaRedeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaRedeTests/Pods-LaRedeTests.release.xcconfig"; sourceTree = "<group>"; };
+		D251EF7720EE36CC00544804 /* UserAlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAlbumCollectionViewCell.swift; sourceTree = "<group>"; };
 		D25B5BC020E44FCD00E5ACC7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D25B5BE220ED61B100E5ACC7 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		D25DBD5820C849F400334F66 /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				D25B5BE220ED61B100E5ACC7 /* Album.swift */,
 				D25DBD5820C849F400334F66 /* UserDetailTableViewCell.swift */,
 				D2FEA4A520B646710052A0C8 /* UserDetailViewController.swift */,
+				D251EF7720EE36CC00544804 /* UserAlbumCollectionViewCell.swift */,
 				D25DBD5C20C8ABCA00334F66 /* GoogleService-Info.plist */,
 				D2FA17C520C8AD6100C1C29F /* AutenticationViewController.swift */,
 				D25B5BC020E44FCD00E5ACC7 /* Extensions.swift */,
@@ -457,6 +460,7 @@
 				D273BA3620A3CCAE0045BE07 /* Company.swift in Sources */,
 				D273BA2D20A35AA10045BE07 /* Reachability.swift in Sources */,
 				D273BA3120A3B8F00045BE07 /* FormUserTableViewController.swift in Sources */,
+				D251EF7820EE36CC00544804 /* UserAlbumCollectionViewCell.swift in Sources */,
 				D2FEA4A620B646710052A0C8 /* UserDetailViewController.swift in Sources */,
 				D2A07D4A209E24E600039C22 /* User.swift in Sources */,
 				D25DBD5920C849F400334F66 /* UserDetailTableViewCell.swift in Sources */,

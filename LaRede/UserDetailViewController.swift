@@ -86,8 +86,8 @@ class UserDetailViewController: UIViewController, UITableViewDelegate, UITableVi
         var albums = [Album]()
         for i in 0..<4 {
             let album = Album(name:"Férias \(i)", albumDescription: "Minhas férias viajando \(i)")
-            album.photos.append(#imageLiteral(resourceName: "picture"))
-            album.photos.append(#imageLiteral(resourceName: "picture"))
+            //album.photos.append(#imageLiteral(resourceName: "picture"))
+            //album.photos.append(#imageLiteral(resourceName: "picture"))
             albums.append(album)
         }
         return albums

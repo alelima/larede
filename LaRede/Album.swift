@@ -26,8 +26,8 @@ class Album: NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UIC
         let identifier = "UserPhotoCollectionCell"
         let cell =
             collectionView.dequeueReusableCell(withReuseIdentifier: identifier,
-                                               for: indexPath)
-        cell.backgroundColor = UIColor.blue
+                                               for: indexPath) as! UserAlbumCollectionViewCell
+        cell.imageView?.image = photos[indexPath.row]
         return cell
     }
     
