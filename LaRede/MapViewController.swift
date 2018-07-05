@@ -21,7 +21,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
     var mapPlacemark: CLPlacemark?
-    var mapAddress: Address?
+    var mapAddress: UserCodable.Address?
     
     @objc func longPress(recognizer: UIPanGestureRecognizer) {
         switch recognizer.state {
@@ -52,20 +52,9 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
     func convertAdress(from placemark: CLPlacemark) {
-        let geo = Geo()
-        geo.lat = Double((placemark.location?.coordinate.latitude)!)
-        geo.lng = Double((placemark.location?.coordinate.longitude)!)
-        
-        let address = Address()
-        address.suite = placemark.locality
-        address.street = placemark.thoroughfare
-        address.city = placemark.subAdministrativeArea
-        address.zipcode = placemark.isoCountryCode
-        
-        address.geo = geo
-        
-        mapAddress = address
-        
+        let geo = UserCodable.Address.Geo(lat: String(Double((placemark.location?.coordinate.latitude)!)), lng: String(Double((placemark.location?.coordinate.longitude)!)))
+        let address = UserCodable.Address(street: placemark.thoroughfare, suite: placemark.locality, city: placemark.subAdministrativeArea, zipcode: placemark.postalCode, geo: geo)
+        mapAddress = address        
     }
     
     override func viewDidLoad() {

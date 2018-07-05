@@ -171,6 +171,12 @@ class FormUserTableViewController: UITableViewController, URLSessionDataDelegate
     @IBAction func unWindToFormUserFromMap(_ segue: UIStoryboardSegue) {
         let controller = segue.source as! MapViewController
         print(controller.mapAddress)
+        cidadeTextField.text = controller.mapAddress?.city
+        ruaTextField.text = controller.mapAddress?.street
+        logradouroTextField.text = controller.mapAddress?.suite
+        cepTextField.text = controller.mapAddress?.zipcode
+        latitudeTextField.text = controller.mapAddress?.geo?.lat
+        longitudeTextField.text = controller.mapAddress?.geo?.lng
     }
 
 }
